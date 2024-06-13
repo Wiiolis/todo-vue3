@@ -1,6 +1,8 @@
 <template>
   <header>Todo App</header>
   <dashboard/>
+
+  <router-link :to="{name:'dashboard'}">Home</router-link>
   <footer>Todo App Footer</footer>
 </template>
 

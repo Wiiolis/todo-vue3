@@ -4,14 +4,17 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "start" : "vue-cli-service build && electron .",
+    "start": "vue-cli-service build && electron .",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "sass": "^1.77.5",
+    "vue": "^3.2.13",
+    "vue-route": "^1.5.1",
+    "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

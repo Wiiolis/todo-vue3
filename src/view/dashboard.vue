@@ -1,5 +1,7 @@
 <template>
+    <div class="categories_wrapper">
     <TodoCategory v-for="category in categories" :key="category.index" :category="category" />
+    </div>
 </template>
   
 <script>
@@ -21,4 +23,9 @@ export default {
 }
 </script>
   
-  
+<style>
+.categories_wrapper {
+    display: flex;
+    gap: 10px;
+}
+</style>
