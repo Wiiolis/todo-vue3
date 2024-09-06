@@ -1,9 +1,0 @@
-{
-  "name": "wiiolis",
-  "version": "1.0.0",
-  "main": "main.js",
-  "license": "MIT",
-  "devDependencies": {
-    "electron": "^31.0.1"
-  }
-}
