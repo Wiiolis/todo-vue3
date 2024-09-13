@@ -6,12 +6,14 @@ const routes = [
   {
     path: '/categories',
     name: 'dashboard',
-    component: dashboard
+    component: dashboard,
+    props: (route) => ({ category: route.params.category })
   },
   {
     path: '/categories/:category',
     name: 'category',
-    component: category
+    component: category,
+    props: true
   },
 ]
 

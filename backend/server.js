@@ -1,4 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
+const cors = require('cors');  // Import cors middleware
 
 const sequelize = new Sequelize ({
     dialect: 'sqlite',
@@ -19,6 +20,7 @@ async function startServer() {
     const express = require('express');
     const app = express();
     const port = 3001;
+    app.use(cors());
     app.use(express.json())
 
     app.get('/api/categories', (req, res) => {
